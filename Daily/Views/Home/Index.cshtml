@@ -1,0 +1,34 @@
+﻿@model TaskToday
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="main-daily">
+    <div class="row date-table">
+
+        <div class="col-md-6 current-day">
+            <div class="table-day">
+                <p class="table-head">Задачи на @Model.CurrentDay</p>
+                <div class="task-current-day">
+                    @foreach (var task in Model.Tasks)
+                    {
+                        <div>
+                            <p>@task.Id</p>
+                        </div>
+                        <div>
+                            <p>@task.Time</p>
+                        </div>
+                        <div>
+                            <p>@task.Task</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 task">
+            <p>123</p>
+        </div>
+
+    </div>
+</div>

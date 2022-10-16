@@ -1,0 +1,46 @@
+﻿.main-daily {
+    background: rgba(73, 220, 184);
+    width: 100vw;
+    height: 90vh;
+    background-image: url(https://st.depositphotos.com/1092019/3699/i/600/depositphotos_36997605-stock-photo-paving-slabs-seamless-tileable-texture.jpg);
+}
+    .main-daily .current-day {
+        background: #902d2d;
+        height: 60vh;
+    }
+    .main-daily .task {
+    background: #008080;
+    height: 60vh;
+}
+
+    .main-daily .date-table {
+        padding: 15vh 50px 0 50px;
+        position: relative;
+    }
+        .main-daily .date-table .table-day {
+            background: #222;
+            margin: 2vh;
+            height: 56vh;
+        }
+            .main-daily .date-table .table-day .table-head {
+                color: #fff;
+                padding: 20px;
+                border: 1px solid #fff;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .main-daily .date-table .table-day .task-current-day {
+                overflow-y: scroll;
+                padding: 10px;
+                color: #fff;
+                display: grid;
+                grid-template-columns: 20px 50px calc(100% - 70px);
+                max-height: 45vh;
+            }
+                .main-daily .date-table .table-day .task-current-day div {
+                    border-bottom: 1px solid #fff;
+                }
+                .main-daily .date-table .table-day .task-current-day p {
+                    margin: 5px;
+                }
